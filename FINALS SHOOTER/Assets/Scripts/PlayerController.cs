@@ -17,14 +17,16 @@ public float moveSpeed = 1f;
     public LayerMask whatIsGround;
     private bool _canPlayerJump;
     private Vector3 _moveInput;
+
+    //private Ammo _ammo;
     private CharacterController _characterController;
-    private Ammo _ammo;
+    //[SerializedField] private Animator _playerAnimator
 
     // Start is called before the first frame update
     void Start()
     {
         _characterController = GetComponent<CharacterController>();
-        _ammo = GetComponent<Ammo>();
+     
     }
 
     // Update is called once per frame
@@ -73,7 +75,7 @@ public float moveSpeed = 1f;
         theCamera.rotation = Quaternion.Euler(theCamera.rotation.eulerAngles + new Vector3(-mouseInput.y, 0f, 0f));
 
         //Handle Shooting
-        if(Input.GetMouseButtonDown(0) && _ammo.GetAmmoAmount() > 0)
+       // if(Input.GetMouseButtonDown(0) && _ammo.GetAmmoAmount() > 0)
         {
             //Find the crosshair
             RaycastHit hit;
@@ -90,10 +92,10 @@ public float moveSpeed = 1f;
             }
 
             //Create the bullet
-            Instantiate(bullet, FirePoint.position, FirePoint.rotation);
+            //Instantiate(bullet, FirePoint.position, FirePoint.rotation);
 
             //Remove ammo
-            _ammo.RemoveAmmo();
+            //_ammo.RemoveAmmo();
         }
     }
 }
