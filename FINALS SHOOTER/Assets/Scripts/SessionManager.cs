@@ -30,8 +30,8 @@ public class SessionManager : MonoBehaviour
     {
         SceneManager.LoadScene(LevelTwoNumber);
     }
-    public void OnLevelThreePressed()
-    {
-        SceneManager.LoadScene(LevelThreeNumber);
-    }
+   // public void OnLevelThreePressed()
+   // {
+    //    SceneManager.LoadScene(LevelThreeNumber);
+   /// }
 }
