@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Ammo : MonoBehaviour
 {
- // public TextMeshProUGUI ammoAmountText;
+    public TextMeshProUGUI ammoAmountText;
     private int _ammoAmount = 10;
 
     // Start is called before the first frame update
@@ -33,7 +35,7 @@ public class Ammo : MonoBehaviour
 
     private void DisplayAmmoAmount()
     {
-     //   ammoAmountText.text = "Ammo: " + _ammoAmount.ToString();
+      ammoAmountText.text = "Ammo: " + _ammoAmount.ToString();
     }
 
     void OnTriggerEnter(Collider other)

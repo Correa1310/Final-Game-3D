@@ -1,25 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 
 public class GameManager : MonoBehaviour
 {
-      // public TextMeshProUGUI targetText;
+       public TextMeshProUGUI targetText;
     public int winScene;
     public int loseScene;
     private int _targetAmount;
-    //private Timer _timer;
+    private Timer _timer;
 
     // Start is called before the first frame update
     void Start()
     {
-        //_timer = GameObject.Find("GameManager").GetComponent<Timer>();
+        _timer = GameObject.Find("GameManager").GetComponent<Timer>();
         Cursor.lockState = CursorLockMode.Locked;
         int floatingTarget = GameObject.FindGameObjectsWithTag("TargetFloating").Length;
         int standingTarget = GameObject.FindGameObjectsWithTag("TargetStanding").Length;
         _targetAmount = floatingTarget + standingTarget;
-        //targetText.text = "Targets: " + _targetAmount.ToString();
+        targetText.text = "Targets: " + _targetAmount.ToString();
     }
 
     void Update()
@@ -33,7 +35,7 @@ public class GameManager : MonoBehaviour
     public void UpdateTargetAmount()
     {
         _targetAmount -= 1;
-        //targetText.text = "Targets: " + _targetAmount.ToString();
+        targetText.text = "Targets: " + _targetAmount.ToString();
 
         if(_targetAmount <= 0)
         {

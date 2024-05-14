@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-          public float moveSpeed = 10f;
+    public float moveSpeed = 10f;
     public float lifeTime = 5f;
     private Rigidbody _rigidbody;
 
@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("TargetStanding") || other.gameObject.CompareTag("TargetFloating"))
+        if(other.gameObject.CompareTag("TargetStanding"))
         {
             Debug.Log("I hit the standing target.");
             //add code to add hit points to your scoreboard
