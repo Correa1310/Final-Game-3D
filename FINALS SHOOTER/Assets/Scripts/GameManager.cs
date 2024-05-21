@@ -16,19 +16,19 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _timer = GameObject.Find("GameManager").GetComponent<Timer>();
+        _timer = GameObject.Find("Gamemanager").GetComponent<Timer>();
         Cursor.lockState = CursorLockMode.Locked;
-        int floatingTarget = GameObject.FindGameObjectsWithTag("TargetFloating").Length;
+        //int floatingTarget = GameObject.FindGameObjectsWithTag("TargetFloating").Length;
         int standingTarget = GameObject.FindGameObjectsWithTag("TargetStanding").Length;
-        _targetAmount = floatingTarget + standingTarget;
+        _targetAmount = standingTarget;
         targetText.text = "Targets: " + _targetAmount.ToString();
     }
 
     void Update()
     {
-       // if(_timer.GetTimeRemaining() <= 0)
+         if(_timer.GetTimeRemaining() <= 0)
         {
-            //SceneManager.LoadScene(loseScene);
+            SceneManager.LoadScene(loseScene);
         }
     }
 
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         if(_targetAmount <= 0)
         {
             //stop the timer
-           GameObject.Find("GameManager").GetComponent<Timer>().EndGameTimer();
+           GameObject.Find("Gamemanager").GetComponent<Timer>().EndGameTimer();
 
             //Send player to the win scene
             //SceneManager.LoadScene(winScene);
