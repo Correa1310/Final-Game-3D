@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
@@ -43,7 +44,7 @@ public class GameManager : MonoBehaviour
            GameObject.Find("Gamemanager").GetComponent<Timer>().EndGameTimer();
 
             //Send player to the win scene
-            //SceneManager.LoadScene(winScene);
+            SceneManager.LoadScene(winScene);
         }
     }
 }

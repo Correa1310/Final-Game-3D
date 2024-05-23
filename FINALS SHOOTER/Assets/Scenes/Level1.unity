@@ -1023,8 +1023,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetText: {fileID: 641332892}
-  winScene: 0
-  loseScene: 0
+  winScene: 3
+  loseScene: 4
 --- !u!4 &66880680
 Transform:
   m_ObjectHideFlags: 0
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7ab2273fb8f745c48358639d6f95907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 60
+  timeRemaining: 100
   timerText: {fileID: 849789182}
 --- !u!1 &69479495 stripped
 GameObject:

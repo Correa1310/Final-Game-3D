@@ -95,6 +95,16 @@ public class PlayerController : MonoBehaviour
 
             //Remove ammo
             _ammo.RemoveAmmo();
+              
+     
+        if(collision.gameObject.CompareTag("DeadZone"))
+        {
+            if(_isAtCheckpoint)
+            {
+                transform.position = _checkpointPosition;
+            }
+            
+        }
         }
     }
 }

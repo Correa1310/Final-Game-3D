@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 5da28ee00f4bb4316ad464eab3b9c32c, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -8340,6 +8340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1351599319}
   - component: {fileID: 1351599318}
+  - component: {fileID: 1351599320}
   m_Layer: 0
   m_Name: Gamemanager
   m_TagString: Untagged
@@ -8376,6 +8377,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1351599320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351599317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb530ddad2b14086b236e2ad7f268e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetText: {fileID: 0}
+  winScene: 5
+  loseScene: 4
 --- !u!1001 &1366339292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8446,11 +8462,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2041237166296361892, guid: d8133cecb4b014a8f949aa7f4d51e5f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.22
+      value: 11.128
       objectReference: {fileID: 0}
     - target: {fileID: 2041237166296361892, guid: d8133cecb4b014a8f949aa7f4d51e5f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.616
+      value: 4.275
       objectReference: {fileID: 0}
     - target: {fileID: 2041237166296361892, guid: d8133cecb4b014a8f949aa7f4d51e5f3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11777,6 +11793,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c647fe21b0c284f34b4fa399c948db66, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7139261109480557378, guid: c647fe21b0c284f34b4fa399c948db66, type: 3}
+      propertyPath: m_TagString
+      value: DeadZone
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c647fe21b0c284f34b4fa399c948db66, type: 3}
       propertyPath: m_Name
