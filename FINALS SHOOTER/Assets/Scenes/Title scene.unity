@@ -635,13 +635,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1008473264}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1008473266}
+        m_TargetAssemblyTypeName: SessionManager, Assembly-CSharp
+        m_MethodName: OnLevelOnePressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -943,7 +943,6 @@ MonoBehaviour:
   levelSelectSceneNumber: 1
   LevelOneNumber: 2
   LevelTwoNumber: 3
-  LevelThreeNumber: 0
 --- !u!1 &1267332274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,6 +1213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb530ddad2b14086b236e2ad7f268e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetText: {fileID: 0}
   winScene: 0
   loseScene: 0
 --- !u!1001 &7804919925634770541

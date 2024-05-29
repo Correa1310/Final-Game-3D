@@ -10,7 +10,7 @@ public class SessionManager : MonoBehaviour
 
     public int LevelOneNumber;
     public int LevelTwoNumber;
-    public int LevelThreeNumber;
+    //public int LevelThreeNumber;
     
     // Start is called before the first frame update
     void OnPlayButtonPressed()

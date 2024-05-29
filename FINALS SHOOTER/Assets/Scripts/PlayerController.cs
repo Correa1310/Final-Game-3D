@@ -97,11 +97,10 @@ public class PlayerController : MonoBehaviour
             _ammo.RemoveAmmo();
               
      
-        if(collision.gameObject.CompareTag("DeadZone"))
-        {
-            if(_isAtCheckpoint)
+        //if(collision.gameObject.CompareTag("DeadZone"))
+        {//if(_isAtCheckpoint)
             {
-                transform.position = _checkpointPosition;
+           //     transform.position = _checkpointPosition;
             }
             
         }
